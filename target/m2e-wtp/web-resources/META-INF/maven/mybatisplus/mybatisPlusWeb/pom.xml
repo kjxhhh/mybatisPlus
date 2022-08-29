@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>mybatisPlusWeb</artifactId>
+	<packaging>war</packaging>
+	<name>mybatisPlusWeb Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+			<!-- 引入mybatisPlus.mybatisPlusContorller -->
+		<dependency>
+			<groupId>mybatisplus</groupId>
+			<artifactId>mybatisPlusContorller</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- 引入mybatisPlus.mybatisPlusMapper -->
+		<dependency>
+			<groupId>mybatisplus</groupId>
+			<artifactId>mybatisPlusMapper</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- 引入mybatisPlus.mybatisPlusEntity -->
+		<dependency>
+			<groupId>mybatisplus</groupId>
+			<artifactId>mybatisPlusEntity</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- 引入mybatisPlus.mybatisPlusService -->
+		<dependency>
+			<groupId>mybatisplus</groupId>
+			<artifactId>mybatisPlusService</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<!-- 所有子模块都继承最父类pom.xml -->
+	<parent>
+		<groupId>mybatisplus</groupId>
+		<artifactId>mybatisplusParent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../mybatisPulsParent/pom.xml</relativePath>
+	</parent>
+</project>
